@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            width:auto;
+            margin:auto;
+            margin:0px;
+            font-family:'Roboto';
+            text-align:center;
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,181,0,1) 100%);
+        }
+        h1{
+            border-bottom:1px solid black;
+        }
+        
+        .Square
+        {
+        width:60px;
+        height: 60px;
+        text-align:center;
+        font-size: 30pt;
+        font-weight: bold;
+        font-family: Verdana;
+        }
+    </style>
+</head>
+
+<body onload= "startGame();" >
+ <h1 align="center" style="font-size:80px;color:cornsilk;"> Tic-Tac-Toe!</h1 >
+ <div id="message" style="font-size:40px;color:cornsilk;"> message will be here </div>
+ <br>
+ <table  border="15" align="center">
+        <tr>
+            <td id="s1" class= "Square" onclick="nextMove(this);"></td>
+            <td id="s2" class= "Square" onclick="nextMove(this);"></td>
+            <td id="s3" class= "Square" onclick="nextMove(this);"></td>
+        </tr>
+        <tr>
+            <td id="s4" class= "Square" onclick="nextMove(this);"></td>
+            <td id="s5" class= "Square" onclick="nextMove(this);"></td>
+            <td id="s6" class= "Square" onclick="nextMove(this);"></td>
+        </tr>
+        <tr>
+            <td id="s7" class= "Square" onclick="nextMove(this);"></td>
+            <td id="s8" class= "Square" onclick="nextMove(this);"></td>
+            <td id="s9" class= "Square" onclick="nextMove(this);"></td>
+        </tr>
+    </table ><br>
+    <button type="button" onclick=startGame()> Start New Game</button >
+ </div>
+    <script src="TicTacToe.js"></script>
+    </body>
+    </html>
